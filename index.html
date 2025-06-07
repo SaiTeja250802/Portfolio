@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amgoth Sai Teja - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">Amgoth Sai Teja</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="#" class="btn btn-outline">Resume</a>
+        <div class="theme-switcher">
+          <div class="theme-dot" data-color="orange" style="background-color: #ff6a00"></div>
+          <div class="theme-dot" data-color="cyan" style="background-color: #00bfd8"></div>
+          <div class="theme-dot" data-color="purple" style="background-color: #9b5de5"></div>
+          <div class="theme-dot" data-color="green" style="background-color: #00c896"></div>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <h1 data-aos="fade-up">Hi, I'm Sai Teja</h1>
+          <p class="subheading" data-aos="fade-up" data-aos-delay="100">
+            Full Stack Developer & Data Science Enthusiast from ABV IIITM Gwalior
+          </p>
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+            Pre-final year student at IIITM Gwalior, pursuing a dual degree in IT and MBA. Skilled in building
+            intelligent systems and full-stack web applications. Experienced in AI, ML, Deep Learning, NLP, Computer
+            Vision, and cloud deployment.
+          </p>
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="mailto:saiteja.amgoth@gmail.com" class="btn btn-outline-animated">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="hero-right" data-aos="fade-left" data-aos-delay="400">
+          <div class="hero-image-container">
+            <img src="images/Saiteja.jpg" alt="Sai Teja" class="hero-image" />
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-lines"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 data-aos="fade-up">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-aos="fade-up">C</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100">C++</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200">Python</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300">JavaScript</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="400">ReactJS</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="500">NodeJS</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="600">ExpressJS</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="700">MongoDB</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="800">Flask</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="900">Streamlit</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="1000">TensorFlow</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="1100">Scikit-learn</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="1200">OpenCV</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="1300">Git</div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="1400">PowerBI</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up">
+            <h3>AskMe: AI Assistant</h3>
+            <p>
+              • Developed and optimized an AI-powered chatbot capable of handling diverse customer queries with high
+              accuracy
+              and minimal latency. Integrated Google and Groq APIs with the Gemma-7b-it model, achieving an average
+              response
+              time of 100 milliseconds, ensuring real-time query resolution.
+              • Built a user-friendly Streamlit-based interface, providing responses within 1-2 seconds, significantly
+              improving
+              customer interaction and engagement.
+              • Implemented advanced error handling and retry mechanisms to ensure reliability, even under high server
+              loads,
+              minimizing downtime and enhancing system robustness.
+              • Integrated a conversation.txt file to store and update chat history, enabling the chatbot to reference
+              past queries for
+              context while efficiently managing storage by removing outdated entries
+            </p>
+            <div class="project-tags">
+              <span>Langchain</span>
+              <span>Streamlit</span>
+              <span>RAG</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SaiTeja250802/Ask-me-AI-Assistant-" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Anti-Spoofing System</h3>
+            <p>
+              • Developed a real-time Anti-Spoofing System that detects whether a face presented to a camera is real or
+              fake.
+              • Prevents spoofing attacks such as printed photos, digital screens, and video replays.
+              • Uses OpenCV for real-time video frame capture and processing.
+              • Built a deep learning-based liveness detection model trained on genuine and spoofed face data.
+              • Classifies input faces as "real" or "fake" with high accuracy.
+
+            </p>
+            <div class="project-tags">
+              <span>YOLOv8</span>
+              <span>OpenCV</span>
+              <span>Python</span>
+              <span>DL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SaiTeja250802/Realtime-Anti-Spoofing-Detector" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Hospital Management System</h3>
+            <p>
+              • Engineered a hospital management web app that eases operations and significantly increases efficiency.
+              • Created an intuitive admin dashboard that streamlines appointment scheduling, patient record management,
+              and
+              staff coordination, improving operational efficiency and workflow management.
+              • Increased data security by 40% through the implementation of advanced encryption techniques and
+              role-based
+              access controls, safeguarding sensitive information from unauthorized access.
+              • Developed the front-end using HTML, CSS, and React, and the back-end with Node.js, Express, and MongoDB,
+              optimized for a 25% improvement in processing speed using Vite.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SaiTeja250802/Cura-Sys/tree/main/HMS" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Shopito - eCommerce Platform</h3>
+            <p>
+              • Designed 8+ MongoDB schemas (User, Product, Cart, Order, Payment, Category, etc.) and constructed
+              RESTful
+              APIs, reducing manual data entry by 40% and improving data management efficiency.
+              • Integrated Stripe for secure payment processing and Cloudinary for media management, boosting
+              transaction
+              efficiency by 35% and optimizing media handling by 25%.
+              • Hosted the platform on Vercel and Render, achieving a 30% improvement in website responsiveness and
+              increasing
+              overall user satisfaction by 20%.
+              • Implemented pagination and lazy loading for product listings and order history, improving scalability
+              and reducing
+              page load time by 40% on large datasets.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <h2 data-aos="fade-up">Achievements</h2>
+        <div class="achievements-list">
+          <div class="achievement-item" data-aos="fade-left">
+            <div class="achievement-year">2024</div>
+            <div class="achievement-details">
+              <h3>Amazon ML Challenge 2024</h3>
+              <p>
+                Ranked 292nd out of 25,000+ teams in the prestigious Amazon ML Challenge.
+              </p>
+            </div>
+          </div>
+          <div class="achievement-item" data-aos="fade-left" data-aos-delay="100">
+            <div class="achievement-year">2024</div>
+            <div class="achievement-details">
+              <h3>Data Science Hackathon @ IIT Kharagpur</h3>
+              <p>
+                Qualified to the second round of the Data Science Hackathon 2024 at IIT Kharagpur.
+              </p>
+            </div>
+          </div>
+          <div class="achievement-item" data-aos="fade-left" data-aos-delay="200">
+            <div class="achievement-year">LeetCode</div>
+            <div class="achievement-details">
+              <h3>LeetCode Problem Solver</h3>
+              <p>
+                Solved 400+ problems on LeetCode, focusing on Data Structures & Algorithms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 data-aos="fade-up">Get in Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:saiteja.amgoth@gmail.com">saiteja.amgoth@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/sai-teja-8b6357245/" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/SaiTeja250802" target="_blank">GitHub Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Designed with ❤️ by Sai Teja</p>
+    </div>
+  </footer>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+D:\Resume\resume\Porfolio\Portfolio_charan\images
