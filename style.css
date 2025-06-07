@@ -503,44 +503,117 @@ header ul a:hover {
 }
 
 /* --- Contact Section --- */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.contact-form-container {
+  background: var(--card-bg-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--card-bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  color: var(--text-color-light);
+.form-group {
+  position: relative;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg-color);
+  color: var(--text-color-light);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color-dark);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background: var(--card-bg-color);
+  padding: 0 0.5rem;
+}
+
+.form-group textarea + label {
+  top: 1rem;
+  transform: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
   border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info h3 {
+  color: var(--text-color-light);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .social-links {
-  text-align: center;
-  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.social-links a {
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--card-bg-color);
+  border-radius: 8px;
+  text-decoration: none;
   color: var(--text-color-light);
-  font-size: 2rem;
-  margin: 0 1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.social-links a:hover {
-  color: var(--primary-color);
+.social-link:hover {
+  transform: translateX(10px);
+  background: var(--primary-color);
+  color: white;
+}
+
+.social-link i {
+  font-size: 1.5rem;
 }
 
 /* --- Footer --- */
@@ -605,5 +678,9 @@ footer {
   }
   .activities-grid {
     grid-template-columns: 1fr;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
